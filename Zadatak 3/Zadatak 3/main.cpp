@@ -8,9 +8,13 @@ using namespace std;
 
 int main()
 {
-    int broj1,broj2;
+        int broj1,broj2;
         cout << "Unesite pocetnu i krajnu vrijednost:" << endl;
         cin >> broj1 >> broj2;
+        if (broj2 > 9999)
+            return 0;
+        if (broj1 > broj2)
+            return 0;
         cout << "+---------+----------+----------+-----------+" << endl;
         cout << "| Brojevi | Kvadrati | Korijeni | Logaritmi |" << endl;
         cout << "+---------+----------+----------+-----------+"<<endl;
